@@ -1,1 +1,1 @@
-terraform plan -out plan.out -var-file env-vars/dev/env.tfvars
+terraform plan -out plan.out -var-file env-vars/dev/env.tfvars --detailed-exitcode 
