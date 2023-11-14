@@ -16,7 +16,7 @@ locals {
     application = var.application
     environment = var.environment
     owners      = var.owners
-    scope       = "lab7"
+    scope       = "lab7-github"
   }
 
   snet_paas_id = data.terraform_remote_state.this.outputs.snet_paas
