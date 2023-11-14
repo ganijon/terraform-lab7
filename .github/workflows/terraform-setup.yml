@@ -103,7 +103,7 @@ jobs:
       
       - name: terraform apply
         run: |
-          cd scripts 
+          cd cloud_infra_app/scripts 
           chmod 777 apply.sh
           cd .. 
           scripts/apply.sh         
