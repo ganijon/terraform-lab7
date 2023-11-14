@@ -99,8 +99,16 @@ jobs:
           path: cloud_infra_app     
       
       - name: list files
-        run: cd cloud_infra_app && ls
-      
+        run: cd cloud_infra_app && ls -a
+
+      - name: terraform init
+        run: |
+          cd cloud_infra_app 
+          cd scripts 
+          chmod 777 init.sh
+          cd .. 
+          scripts/init.sh 
+
       - name: terraform apply
         run: |
           cd cloud_infra_app/scripts 
