@@ -1,5 +1,5 @@
 variable "application" {
-  default = "Lab06"
+  default = "Lab07"
 }
 
 variable "domain" {
